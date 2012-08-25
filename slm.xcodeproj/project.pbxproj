@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		190F9C3F15DD9EE4005440C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 190F9C3E15DD9EE4005440C4 /* main.cpp */; };
 		190F9C4115DD9EE4005440C4 /* slm.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 190F9C4015DD9EE4005440C4 /* slm.1 */; };
+		190F9C4915DD9F2E005440C4 /* net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 190F9C4715DD9F2E005440C4 /* net.cpp */; };
+		190F9C4D15DDA0E2005440C4 /* lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 190F9C4B15DDA0E2005440C4 /* lock.cpp */; };
+		190F9C5015DF7F06005440C4 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 190F9C4E15DF7F06005440C4 /* json.cpp */; };
+		190F9C6215DFC9E4005440C4 /* slmclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 190F9C6115DFC9E4005440C4 /* slmclient.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +32,26 @@
 		190F9C3A15DD9EE4005440C4 /* slm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slm; sourceTree = BUILT_PRODUCTS_DIR; };
 		190F9C3E15DD9EE4005440C4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		190F9C4015DD9EE4005440C4 /* slm.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = slm.1; sourceTree = "<group>"; };
+		190F9C4715DD9F2E005440C4 /* net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net.cpp; sourceTree = "<group>"; };
+		190F9C4815DD9F2E005440C4 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		190F9C4A15DD9F6B005440C4 /* slm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slm.h; sourceTree = "<group>"; };
+		190F9C4B15DDA0E2005440C4 /* lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lock.cpp; sourceTree = "<group>"; };
+		190F9C4C15DDA0E2005440C4 /* lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lock.h; sourceTree = "<group>"; };
+		190F9C4E15DF7F06005440C4 /* json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json.cpp; sourceTree = "<group>"; };
+		190F9C4F15DF7F06005440C4 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		190F9C5D15DFC93D005440C4 /* libslm.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libslm.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		190F9C6115DFC9E4005440C4 /* slmclient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slmclient.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		190F9C3715DD9EE4005440C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190F9C5A15DFC93D005440C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				190F9C3A15DD9EE4005440C4 /* slm */,
+				190F9C5D15DFC93D005440C4 /* libslm.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,11 +83,29 @@
 			children = (
 				190F9C3E15DD9EE4005440C4 /* main.cpp */,
 				190F9C4015DD9EE4005440C4 /* slm.1 */,
+				190F9C4715DD9F2E005440C4 /* net.cpp */,
+				190F9C4E15DF7F06005440C4 /* json.cpp */,
+				190F9C4F15DF7F06005440C4 /* json.h */,
+				190F9C4B15DDA0E2005440C4 /* lock.cpp */,
+				190F9C4C15DDA0E2005440C4 /* lock.h */,
+				190F9C4815DD9F2E005440C4 /* net.h */,
+				190F9C4A15DD9F6B005440C4 /* slm.h */,
+				190F9C6115DFC9E4005440C4 /* slmclient.c */,
 			);
 			path = slm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		190F9C5B15DFC93D005440C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		190F9C3915DD9EE4005440C4 /* slm */ = {
@@ -85,6 +124,23 @@
 			productName = slm;
 			productReference = 190F9C3A15DD9EE4005440C4 /* slm */;
 			productType = "com.apple.product-type.tool";
+		};
+		190F9C5C15DFC93D005440C4 /* libslm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190F9C5E15DFC93D005440C4 /* Build configuration list for PBXNativeTarget "libslm" */;
+			buildPhases = (
+				190F9C5915DFC93D005440C4 /* Sources */,
+				190F9C5A15DFC93D005440C4 /* Frameworks */,
+				190F9C5B15DFC93D005440C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libslm;
+			productName = libslm;
+			productReference = 190F9C5D15DFC93D005440C4 /* libslm.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				190F9C3915DD9EE4005440C4 /* slm */,
+				190F9C5C15DFC93D005440C4 /* libslm */,
 			);
 		};
 /* End PBXProject section */
@@ -118,6 +175,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				190F9C3F15DD9EE4005440C4 /* main.cpp in Sources */,
+				190F9C4915DD9F2E005440C4 /* net.cpp in Sources */,
+				190F9C4D15DDA0E2005440C4 /* lock.cpp in Sources */,
+				190F9C5015DF7F06005440C4 /* json.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190F9C5915DFC93D005440C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190F9C6215DFC9E4005440C4 /* slmclient.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +253,22 @@
 			};
 			name = Release;
 		};
+		190F9C5F15DFC93D005440C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = slm;
+			};
+			name = Debug;
+		};
+		190F9C6015DFC93D005440C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = slm;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -202,6 +286,14 @@
 			buildConfigurations = (
 				190F9C4515DD9EE4005440C4 /* Debug */,
 				190F9C4615DD9EE4005440C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		190F9C5E15DFC93D005440C4 /* Build configuration list for PBXNativeTarget "libslm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190F9C5F15DFC93D005440C4 /* Debug */,
+				190F9C6015DFC93D005440C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
