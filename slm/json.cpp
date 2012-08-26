@@ -13,10 +13,13 @@
 #include <string>
 using namespace std;
 
-json_list_locks(string &page) {
+void json_list_locks(string &page) {
     page = "<html>\r\n";
     page += "<head>\r\n";
     page += "</head>\r\n";
+    
+    page += "</html>\r\n";
+    
 }
 json_decode();
 
