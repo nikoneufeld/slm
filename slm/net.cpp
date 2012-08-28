@@ -17,6 +17,9 @@
 #include <sys/types.h>
 #include <sys/uio.h>
 #include <unistd.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
 using namespace std;
 typedef pair<int, u_int8_t *> iobuffer;
 
